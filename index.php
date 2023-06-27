@@ -1,3 +1,12 @@
 <?php include_once 'component\header.php';
 
-echo "r  dsi";
+use App\Service\PDOService;
+
+
+echo "rdd";
+  
+// dump(new PDOService());
+
+$listMovie = new PDOService;
+
+dump($listMovie->findAllMovies());
