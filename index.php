@@ -9,4 +9,4 @@ echo "rdd";
 
 $listMovie = new PDOService;
 
-dump($listMovie->findAllMovies());
+dump($listMovie->findAll());

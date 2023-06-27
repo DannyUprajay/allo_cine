@@ -1,20 +1,22 @@
 <?php
 
+namespace App\Models;
+
 use Datetime;
 
 class Movie 
 {
-    private string $name; 
+    private string $title; 
     private Datetime $releaseDate;
 
-    public function getName(): string
+    public function getTitle(): string
     {
-        return $this->name;
+        return $this->title;
     }
 
-    public function setName(string $name): void
+    public function setTitle(string $title): void
     {
-        $this->name = $name;
+        $this->title = $title;
     }
 
     public function getReleaseDate(): Datetime{
@@ -24,5 +26,7 @@ class Movie
     public function setReleaseDate(Datetime $releaseDate): void{
         $this->releaseDate;
     }
+
+    
 
 }
